@@ -1,0 +1,30 @@
+// @import '../blocks/nav/nav.styl';
+
+
+.nav
+  position: fixed
+  width 320px
+  a
+    transition color .1s
+  a:hover
+    color: #ff332c
+  &::after
+    content ''
+    display block
+    position absolute
+    right 0
+    top 0
+    width 1px
+    height 100%
+    background-color: black
+  &_list
+    padding-left 0
+  &_inner-list
+    padding-left 15px
+    margin-bottom 10px
+  &_list-item
+    margin-bottom 10px
+  &_inner-item
+    margin-bottom 5px
+  
+
