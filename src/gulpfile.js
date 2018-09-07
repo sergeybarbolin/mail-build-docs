@@ -67,16 +67,15 @@ gulp.task('styl', function () {
 gulp.task('js', function () {
 
     gulp.src([
-        
         'bower_components/prismJS/prism.min.js',
         'blocks/**/*.js'
         
         ])
         .pipe(concat('script.min.js'))
-        .pipe(babel({
-            presets: ['env']
-        }))
-        .pipe(uglify())
+        // .pipe(babel({
+        //     presets: ['env']
+        // }))
+        // .pipe(uglify())
         .pipe(gulp.dest('../dist/js'))
         .pipe(browserSync.reload({ stream: true }))
 });
